@@ -1,0 +1,50 @@
+
+> frontend@1.0.0 dev
+> vite --host 0.0.0.0
+
+
+  VITE v7.0.4  ready in 208 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.4.192:3000/
+(node:58361) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/ayg/errand-app/frontend/postcss.config.js?t=1752450552074 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/ayg/errand-app/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: Cannot apply unknown utility class `dark`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:18:1312)
+    at ge (/Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:13:29503)
+    at /Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:18:373
+    at I (/Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at je (/Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:18:172)
+    at bi (/Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:35:780)
+    at async yi (/Users/ayg/errand-app/frontend/node_modules/tailwindcss/dist/lib.js:35:1123)
+    at async _r (/Users/ayg/errand-app/frontend/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async p (/Users/ayg/errand-app/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:4019)
+    at async Object.Once (/Users/ayg/errand-app/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:4290)
+    at async LazyResult.runAsync (/Users/ayg/errand-app/frontend/node_modules/postcss/lib/lazy-result.js:293:11)
+    at async runPostCSS (file:///Users/ayg/errand-app/frontend/node_modules/vite/dist/node/chunks/dep-DZ2tZksn.js:32374:19)
+    at async compilePostCSS (file:///Users/ayg/errand-app/frontend/node_modules/vite/dist/node/chunks/dep-DZ2tZksn.js:32354:17)
+    at async compileCSS (file:///Users/ayg/errand-app/frontend/node_modules/vite/dist/node/chunks/dep-DZ2tZksn.js:32285:26)
+    at async TransformPluginContext.handler (file:///Users/ayg/errand-app/frontend/node_modules/vite/dist/node/chunks/dep-DZ2tZksn.js:31821:53)
+    at async EnvironmentPluginContainer.transform (file:///Users/ayg/errand-app/frontend/node_modules/vite/dist/node/chunks/dep-DZ2tZksn.js:31249:14)
+    at async loadAndTransform (file:///Users/ayg/errand-app/frontend/node_modules/vite/dist/node/chunks/dep-DZ2tZksn.js:26419:26)
+5:51:01 PM [vite] (client) hmr update /src/components/AWSHeader.jsx
+5:53:41 PM [vite] (client) hmr update /src/components/ErrandContent.jsx
+5:57:02 PM [vite] (client) hmr update /src/App.jsx
+5:57:52 PM [vite] (client) hmr update /src/components/AWSHeader.jsx
+5:59:50 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css
+6:02:01 PM [vite] (client) hmr update /src/components/ThemeToggle.jsx
+6:02:30 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css
+6:03:24 PM [vite] (client) hmr update /src/context/ThemeContext.jsx
+6:03:24 PM [vite] (client) hmr invalidate /src/context/ThemeContext.jsx Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+6:03:24 PM [vite] (client) hmr update /src/App.jsx, /src/components/ThemeToggle.jsx
+6:04:09 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css
+6:09:04 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css
+6:09:36 PM [vite] (client) hmr update /src/context/ThemeContext.jsx
+6:09:36 PM [vite] (client) hmr invalidate /src/context/ThemeContext.jsx Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+6:09:36 PM [vite] (client) hmr update /src/App.jsx, /src/components/ThemeToggle.jsx
+6:16:43 PM [vite] (client) hmr update /src/components/ErrandContent.jsx
+6:17:41 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css
+6:22:45 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css
+6:23:07 PM [vite] (client) hmr update /src/styles/aws-q-exact-replica.css

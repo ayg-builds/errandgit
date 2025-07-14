@@ -1,0 +1,13 @@
+
+> frontend@1.0.0 dev
+> vite --host 0.0.0.0
+
+
+  VITE v7.0.4  ready in 157 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.4.192:3000/
+(node:57865) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/ayg/errand-app/frontend/postcss.config.js?t=1752447762960 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/ayg/errand-app/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

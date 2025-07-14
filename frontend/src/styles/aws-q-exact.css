@@ -1,0 +1,502 @@
+/* Exact AWS Q Website Replica CSS */
+
+/* Import AWS fonts */
+@import url('https://a0.awsstatic.com/libra-css/css/1.0.509/style-awsm-base.css');
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Amazon Ember", "Helvetica Neue", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #232f3e;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aws-q-app {
+  min-height: 100vh;
+}
+
+/* AWS Header - exact replica */
+.aws-header {
+  background-color: #232f3e;
+  color: white;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.aws-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.aws-header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.aws-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.aws-logo:hover {
+  color: #ff9900;
+}
+
+.aws-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.aws-header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.aws-header-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.aws-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.aws-header-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.aws-header-button:hover {
+  background-color: #e88b00;
+}
+
+/* Hero Section - exact AWS Q replica */
+.aws-q-hero {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.aws-q-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.aws-q-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Breadcrumbs */
+.aws-breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.aws-breadcrumbs ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.aws-breadcrumbs a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.aws-breadcrumbs a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.aws-breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 4px;
+}
+
+/* Hero Grid */
+.aws-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.aws-hero-text {
+  color: white;
+}
+
+.aws-hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.aws-hero-subtitle {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+.aws-hero-button {
+  background-color: white;
+  color: #232f3e;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.aws-hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aws-hero-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aws-hero-animation-placeholder {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Content Sections */
+.aws-q-content {
+  background-color: #fafafa;
+  padding: 80px 0;
+}
+
+.aws-content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.aws-content-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Meet Amazon Q Section */
+.aws-meet-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background: white;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.aws-meet-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #232f3e;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.aws-meet-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.aws-meet-video {
+  position: relative;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.aws-meet-video:hover {
+  transform: scale(1.02);
+}
+
+.aws-meet-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aws-video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.aws-video-overlay:hover {
+  background: white;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.aws-play-icon {
+  width: 0;
+  height: 0;
+  border-left: 20px solid #232f3e;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 4px;
+}
+
+/* Feature Cards */
+.aws-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.aws-feature-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.aws-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.aws-feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #8B5CF6, #A855F7);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 24px;
+}
+
+.aws-feature-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 16px;
+}
+
+.aws-feature-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aws-hero-grid,
+  .aws-meet-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .aws-hero-title {
+    font-size: 36px;
+  }
+  
+  .aws-hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .aws-meet-content h2 {
+    font-size: 28px;
+  }
+  
+  .aws-features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .aws-q-hero-content,
+  .aws-content-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .aws-meet-section {
+    padding: 40px 24px;
+  }
+}
+
+/* Additional AWS Q specific styles */
+.aws-q-logo {
+  background: linear-gradient(135deg, #8B5CF6, #A855F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.aws-section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #232f3e;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+.aws-cta-section {
+  background: linear-gradient(135deg, #232f3e, #1a252f);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.aws-cta-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.aws-cta-subtitle {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aws-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aws-cta-button-primary {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.aws-cta-button-primary:hover {
+  background-color: #e88b00;
+}
+
+.aws-cta-button-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.aws-cta-button-secondary:hover {
+  background-color: white;
+  color: #232f3e;
+}

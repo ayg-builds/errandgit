@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme defaults */
+@layer base {
+  html {
+    @apply dark;
+  }
+  
+  body {
+    @apply bg-gray-950 text-white;
+  }
+  
+  /* AWS Q inspired color scheme */
+  :root.dark {
+    --color-background: #0f1419;
+    --color-surface: #1a1f2e;
+    --color-primary: #ff9900;
+    --color-secondary: #232f3e;
+    --color-text: #ffffff;
+    --color-text-muted: #9ca3af;
+  }
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out both;
+}
+
+/* AWS Q inspired gradient backgrounds */
+.aws-gradient {
+  background: linear-gradient(135deg, #232f3e 0%, #0f1419 100%);
+}
+
+.aws-accent {
+  color: #ff9900;
+}
+
+/* Override CloudScape components for better dark theme integration */
+.awsui-app-layout {
+  background-color: var(--color-background) !important;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1f2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
