@@ -4,33 +4,36 @@
   margin-bottom: 20px;
 }
 
-/* Background shapes animations */
-.logo-shape-primary {
+/* 'e' logo animations */
+.e-background {
   animation: pulse 3s infinite alternate ease-in-out;
   transform-origin: center;
 }
 
-.logo-shape-secondary {
-  animation: float 3s infinite alternate ease-in-out;
+.e-cutout {
+  animation: float 4s infinite alternate ease-in-out;
   transform-origin: center;
 }
 
-/* Icon animations */
-.logo-handle {
-  animation: stretch 4s infinite alternate ease-in-out;
-  transform-origin: center bottom;
+.e-checkmark {
+  animation: fadeInOut 2s infinite alternate ease-in-out;
+  transform-origin: center;
 }
 
-.logo-bag {
-  animation: swing 6s infinite alternate ease-in-out;
-  transform-origin: center top;
+.task-dot {
+  animation: float 3s infinite alternate ease-in-out;
 }
 
-/* Accent line animation */
-.logo-accent-line {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: draw 2s forwards 0.5s ease;
+.task-dot-1 {
+  animation-delay: 0s;
+}
+
+.task-dot-2 {
+  animation-delay: 0.5s;
+}
+
+.task-dot-3 {
+  animation-delay: 1s;
 }
 
 /* Animation keyframes */
@@ -52,27 +55,12 @@
   }
 }
 
-@keyframes stretch {
+@keyframes fadeInOut {
   0% {
-    transform: scaleY(1);
+    opacity: 0.7;
   }
   100% {
-    transform: scaleY(1.1);
-  }
-}
-
-@keyframes swing {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(1deg);
-  }
-  75% {
-    transform: rotate(-1deg);
-  }
-  100% {
-    transform: rotate(0deg);
+    opacity: 1;
   }
 }
 
@@ -80,6 +68,30 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .logo-text-main,
+[data-theme="dark"] .logo-text {
+  fill: #ffffff;
+}
+
+[data-theme="dark"] .logo-subtitle {
+  fill: #a1a1a6;
+}
+
+/* Hover effects */
+.home-logo:hover .e-background {
+  filter: url(#glow);
+  animation: pulse 1.5s infinite alternate ease-in-out;
+}
+
+.home-logo:hover .task-dot {
+  animation: float 1.5s infinite alternate ease-in-out;
+}
+
+.home-logo:hover .e-checkmark {
+  animation: fadeInOut 1s infinite alternate ease-in-out;
 }
 
 /* Hero logo container */
